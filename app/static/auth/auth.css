@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.flash-messages {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.flash-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.flash-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.flash-message.warning {
+  background-color: #f4e5c4;
+  color: #d39b0d;
+  border-color: #e6d9c3;
+}
+
+.flash-message.danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.flash-message.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border-color: #bee5eb;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.errors {
+  color: red;
+  font-size: 0.9em;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.errors li {
+  margin-bottom: 5px;
+}

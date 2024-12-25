@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - E-Commerce Platform{% endblock %}
+
+{% block content %}
+    <h2>Login</h2>
+    <form method="POST" action="{{ url_for('auth.login') }}">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.email.label }}
+            {{ form.email() }}
+        </div>
+        <div>
+            {{ form.password.label }}
+            {{ form.password() }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+
+    <div class="forgot-password">
+      <p><a href="{{ url_for('auth.reset_password') }}">Forgot Password?</a></p>
+  </div>
+  <div class="redirect-button">
+    <p>Don't have an account?</p>
+    <a href="{{ url_for('auth.register') }}">Register Here</a>
+  </div>
+
+  {% endblock %}
