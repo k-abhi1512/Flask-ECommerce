@@ -1,0 +1,15 @@
+<!-- app/templates/dashboard.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - E-Commerce Platform{% endblock %}
+
+{% block content %}
+
+    <h2>Welcome to Your Dashboard</h2>
+    <!-- Logout Button -->
+    <form action="{{ url_for('auth.logout') }}" method="GET">
+        <button type="submit">Logout</button>
+    </form>
+
+{% endblock %}

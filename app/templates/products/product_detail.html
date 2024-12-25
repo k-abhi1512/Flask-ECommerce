@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ product.name }}</h2>
+{% if product.image_path %}
+        <img src="{{ url_for('static', filename='uploads/' + product.image_path) }}" alt="{{ product.name }}" width="200" height="200">
+    {% else %}
+        <p>No image available</p>
+{% endif %}
+<p>{{ product.description }}</p>
+<p>Price: ${{ product.price }}</p>
+<p>Quantity: {{ product.quantity }}</p>
+<button type="button"><a href="{{ url_for('products.edit_product', product_id=product['_id']) }}">Edit</a></button>
+
+{% endblock %}
